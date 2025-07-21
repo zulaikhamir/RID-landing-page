@@ -200,11 +200,12 @@ const AboutUs = ({ onGetStartedClick }) => {
                 Our Mission
               </h2>
               <p className="text-xl text-[#181ed4] leading-relaxed">
-                We're committed to helping businesses modernize their IT
-                operations, enhance security, and drive scalable, cost-effective
-                technology solutions to achieve long-term growth. Our RMS
-                platform represents our dedication to transforming how companies
-                find and hire the best talent.
+                We're committed to helping businesses modernize their
+                infrastructure operations, enforce consistent security
+                practices, and achieve scalable, cost-effective cloud
+                automation. Our RID platform reflects our mission to simplify
+                infrastructure deployment and empower teams to move faster with
+                confidence.
               </p>
             </motion.div>
 
