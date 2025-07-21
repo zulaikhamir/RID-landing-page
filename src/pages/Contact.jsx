@@ -65,24 +65,24 @@ const Contact = ({ onGetStartedClick }) => {
 
   const faqs = [
     {
-      question: "How long does it take to implement RMS?",
+      question: "How long does it take to deploy infrastructure using RID?",
       answer:
-        "Implementation typically takes 2-4 weeks depending on your specific requirements and customizations.",
+        "With RID, deployments can be completed in minutes instead of days, depending on the complexity and scale of your infrastructure.",
     },
     {
-      question: "Do you provide training for our team?",
+      question: "Is RID suitable for both small teams and large enterprises?",
       answer:
-        "Yes, we provide comprehensive training for all users, including administrators and end-users.",
+        "Yes, RID is designed to scale seamlessly—whether you're a startup managing a few services or an enterprise deploying across multiple regions.",
     },
     {
-      question: "Is RMS suitable for small businesses?",
+      question: "What kind of infrastructure can RID automate?",
       answer:
-        "Absolutely! RMS scales with your business, from startups to enterprise organizations.",
+        "RID supports provisioning and managing cloud infrastructure including compute, storage, networking, and more using Terraform and Ansible.",
     },
     {
-      question: "What kind of support do you offer?",
+      question: "Do you offer onboarding or technical support?",
       answer:
-        "We provide 24/7 technical support, regular updates, and dedicated account management.",
+        "Absolutely! We offer hands-on onboarding, detailed documentation, and technical support to ensure smooth adoption of RID.",
     },
   ];
 
@@ -105,8 +105,9 @@ const Contact = ({ onGetStartedClick }) => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
-            Ready to transform your recruitment process? Let's discuss how RMS
-            can help your organization hire better talent faster.
+            Ready to streamline your infrastructure? Let’s discuss how RID can
+            help your organization deploy faster, smarter, and with zero manual
+            hassle.
           </p>
           <button
             onClick={onGetStartedClick}
@@ -308,7 +309,7 @@ const Contact = ({ onGetStartedClick }) => {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get quick answers to common questions about RMS and our services.
+              Get quick answers to common questions about RID and our services.
             </p>
           </motion.div>
 

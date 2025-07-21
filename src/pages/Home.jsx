@@ -8,39 +8,46 @@ import {
   Clock,
   Shield,
   Zap,
+  Server,
 } from "lucide-react";
 
 const Home = ({ onGetStartedClick }) => {
   const features = [
     {
-      icon: <Users className="h-6 w-6" />,
-      title: "Smart Candidate Management",
-      description: "AI-powered candidate matching and automated screening",
-    },
-    {
-      icon: <Building className="h-6 w-6" />,
-      title: "Multi-Company Support",
-      description: "Manage multiple companies and departments seamlessly",
-    },
-    {
-      icon: <BarChart3 className="h-6 w-6" />,
-      title: "Advanced Analytics",
-      description: "Real-time insights and performance metrics",
-    },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      title: "Faster Hiring",
-      description: "Reduce time-to-hire by up to 60%",
+      icon: <Zap className="h-6 w-6" />,
+      title: "Rapid Provisioning",
+      description:
+        "Automated deployment of infrastructure in minutes using Terraform and Ansible.",
     },
     {
       icon: <Shield className="h-6 w-6" />,
-      title: "Secure & Compliant",
-      description: "Enterprise-grade security and GDPR compliance",
+      title: "Robust Security Configuration",
+      description:
+        "Enforces consistent security policies across all environments.",
     },
     {
-      icon: <Zap className="h-6 w-6" />,
-      title: "Automated Workflows",
-      description: "Streamline your entire recruitment process",
+      icon: <Clock className="h-6 w-6" />,
+      title: "Time Efficient",
+      description:
+        "Eliminates manual provisioning to save time and reduce human error.",
+    },
+    {
+      icon: <BarChart3 className="h-6 w-6" />,
+      title: "Cost Optimization",
+      description:
+        "Avoid over-provisioning and manage resources efficiently to control cloud costs.",
+    },
+    {
+      icon: <Users className="h-6 w-6" />,
+      title: "Team Collaboration",
+      description:
+        "Enables DevOps teams to work together through consistent and version-controlled configurations.",
+    },
+    {
+      icon: <Server className="h-6 w-6" />,
+      title: "Smart Resource Management",
+      description:
+        "Automates tasks like EC2 start/stop, volume attach, and network setup.",
     },
   ];
 
@@ -52,15 +59,16 @@ const Home = ({ onGetStartedClick }) => {
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
             <span className="block">
-              Simplify <span className="text-[#ffd700]">Hiring</span> with
+              Simplify <span className="text-[#ffd700]">Infrastructure</span>{" "}
+              with
             </span>
             <span className="block">
-              <span className="text-[#ffd700]">RMS</span>
+              <span className="text-[#ffd700]">RID</span>
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
-            Your complete solution for fast, efficient, and organized
-            recruitment.
+            Accelerate infrastructure deployment with automation, security, and
+            efficiency.
           </p>
           <button
             onClick={onGetStartedClick}
@@ -82,11 +90,11 @@ const Home = ({ onGetStartedClick }) => {
             className="mb-16 w-full md:w-3/4 text-left"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Why Choose RMS?
+              Why Choose RID?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl">
-              Built for modern HR teams who want to hire faster, smarter, and
-              more efficiently.
+              Built for DevOps teams to streamline infrastructure deployment
+              with confidence and control.
             </p>
           </motion.div>
           <div className="w-full">
@@ -122,11 +130,11 @@ const Home = ({ onGetStartedClick }) => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Transform Your Hiring?
+              Ready to Transform Your Infrastructure Workflow?
             </h2>
             <p className="text-xl mb-8 max-w-2xl text-white/90">
-              Join thousands of companies already using RMS to hire better
-              talent faster.
+              Join teams already using RID to deploy infrastructure faster,
+              safer, and smarter.
             </p>
             <button
               onClick={onGetStartedClick}

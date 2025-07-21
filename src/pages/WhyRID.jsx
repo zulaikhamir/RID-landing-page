@@ -2,118 +2,89 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   Clock,
-  TrendingUp,
   Shield,
-  Users,
   Zap,
-  Award,
+  ServerCog,
+  FileStack,
+  Settings2,
   CheckCircle,
   ArrowRight,
 } from "lucide-react";
 
-const WhyRMS = ({ onGetStartedClick }) => {
+const WhyRID = ({ onGetStartedClick }) => {
   const benefits = [
     {
       icon: <Clock className="h-8 w-8" />,
-      title: "Faster Hiring",
+      title: "Rapid Deployment",
       description:
-        "Reduce time-to-hire by up to 60% with automated workflows and smart matching.",
-      stat: "60% faster",
-    },
-    {
-      icon: <TrendingUp className="h-8 w-8" />,
-      title: "Better Quality Hires",
-      description:
-        "AI-powered candidate matching ensures better fit and higher retention rates.",
-      stat: "40% better retention",
+        "Automate time-consuming infra tasks like EC2 provisioning and network setup.",
+      stat: "70% faster setup",
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Reduced Costs",
+      title: "Reliable & Consistent",
       description:
-        "Lower recruiting costs through efficient processes and reduced dependency on external agencies.",
-      stat: "50% cost reduction",
+        "Avoid manual errors with reusable templates and predictable workflows.",
+      stat: "100% reproducibility",
     },
     {
-      icon: <Users className="h-8 w-8" />,
-      title: "Enhanced Experience",
+      icon: <Zap className="h-8 w-8" />,
+      title: "Cost Efficient",
       description:
-        "Improve candidate experience with transparent communication and streamlined processes.",
-      stat: "90% satisfaction",
+        "Smart lifecycle management like EC2 start/stop scheduling reduces waste.",
+      stat: "30% cost savings",
+    },
+    {
+      icon: <ServerCog className="h-8 w-8" />,
+      title: "Infra as Code",
+      description:
+        "Manage complex configurations with tools like Terraform and Ansible.",
+      stat: "Fully codified setup",
     },
   ];
 
   const features = [
     {
-      category: "Smart Automation",
+      category: "Automation & Provisioning",
       items: [
-        "Automated candidate screening and scoring",
-        "Interview scheduling with calendar integration",
-        "Customizable workflow automation",
-        "Email templates and notifications",
+        "EC2 provisioning with disk mount",
+        "Security group & VPC configuration",
+        "Start/stop scheduling for EC2",
+        "Custom network setup (subnets, routing)",
       ],
     },
     {
-      category: "Advanced Analytics",
+      category: "Templates & Reusability",
       items: [
-        "Real-time hiring metrics and KPIs",
-        "Predictive analytics for hiring trends",
-        "Source effectiveness tracking",
-        "Team performance dashboards",
+        "Reusable Terraform modules",
+        "Config-driven deployment",
+        "Infra blueprint standardization",
+        "Rollback-safe infrastructure changes",
       ],
     },
     {
-      category: "Seamless Integration",
+      category: "Observability & Control",
       items: [
-        "Job board integrations",
-        "ATS and HRIS connectivity",
-        "Calendar and email integration",
-        "API for custom integrations",
+        "Audit-friendly logging",
+        "Scripted repeatable deployments",
+        "Dashboards for job visibility",
+        "Alerts & notifications",
       ],
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "HR Director",
-      company: "TechCorp Inc.",
-      content:
-        "RMS transformed our hiring process completely. We've reduced our time-to-hire by 50% while improving candidate quality.",
-      rating: 5,
-    },
-    {
-      name: "Michael Chen",
-      role: "Talent Acquisition Manager",
-      company: "Global Solutions",
-      content:
-        "The analytics and reporting features give us insights we never had before. It's like having a hiring consultant built into our system.",
-      rating: 5,
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "VP of People",
-      company: "StartupXYZ",
-      content:
-        "As a growing startup, RMS scaled with us perfectly. The automation features saved us countless hours of manual work.",
-      rating: 5,
     },
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Centered */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
-        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+      {/* Hero */}
+      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white py-24 overflow-hidden">
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-            <span className="block">
-              Why Choose <span className="text-[#ffd700]">RMS?</span>
-            </span>
+            Why Choose <span className="text-[#ffd700]">RID?</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
-            Discover how RMS is revolutionizing recruitment with intelligent
-            automation, advanced analytics, and seamless user experience.
+            Automate your cloud infrastructure with speed, consistency, and
+            reliability using RID — the DevOps platform that scales with you.
           </p>
           <button
             onClick={onGetStartedClick}
@@ -125,7 +96,7 @@ const WhyRMS = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* Benefits Section - Left Aligned */}
+      {/* Benefits */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
@@ -135,11 +106,11 @@ const WhyRMS = ({ onGetStartedClick }) => {
             className="mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Measurable Results
+              Built for DevOps Efficiency
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl">
-              Join thousands of companies that have transformed their hiring
-              process with RMS.
+              RID eliminates manual overhead and enforces infrastructure best
+              practices across environments.
             </p>
           </motion.div>
 
@@ -168,7 +139,7 @@ const WhyRMS = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* Features Section - Left Aligned */}
+      {/* Features */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
@@ -178,11 +149,11 @@ const WhyRMS = ({ onGetStartedClick }) => {
             className="mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Powerful Features
+              What RID Automates
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl">
-              Everything you need to streamline your hiring process and make
-              better decisions.
+              From provisioning to teardown — RID handles the heavy lifting for
+              your infrastructure.
             </p>
           </motion.div>
 
@@ -212,56 +183,7 @@ const WhyRMS = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* Testimonials Section - Left Aligned */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl">
-              Don't just take our word for it. Here's what HR professionals say
-              about RMS.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white rounded-2xl p-8 shadow-lg"
-              >
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Award
-                      key={i}
-                      className="h-5 w-5 text-yellow-400 fill-current"
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  "{testimonial.content}"
-                </p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
-                  <p className="text-sm text-gray-500">{testimonial.company}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Centered */}
+      {/* Final CTA */}
       <section className="py-20 bg-[#0026c0] text-white">
         <div className="px-6 text-left">
           <motion.div
@@ -270,11 +192,11 @@ const WhyRMS = ({ onGetStartedClick }) => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Transform Your Hiring?
+              Ready to Automate Your Infrastructure?
             </h2>
             <p className="text-xl mb-8 max-w-2xl text-white/90">
-              Join thousands of companies that have already revolutionized their
-              recruitment process with RMS.
+              Get started with RID and eliminate the hassle of repetitive cloud
+              infrastructure tasks.
             </p>
             <button
               onClick={onGetStartedClick}
@@ -290,4 +212,4 @@ const WhyRMS = ({ onGetStartedClick }) => {
   );
 };
 
-export default WhyRMS;
+export default WhyRID;

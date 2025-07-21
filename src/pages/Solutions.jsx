@@ -15,18 +15,18 @@ import {
 const Solutions = ({ onGetStartedClick }) => {
   const solutions = [
     {
-      id: "hr-teams",
+      id: "devops-teams",
       icon: <Users className="h-12 w-12" />,
-      title: "For HR Teams",
+      title: "For DevOps Teams",
       description:
-        "Streamline your recruitment process with powerful tools designed for HR professionals.",
+        "Automate your infrastructure workflows with tools built to accelerate delivery and reduce manual effort.",
       features: [
-        "Centralized Job Posting & Management",
-        "Advanced Candidate Filtering",
-        "Automated Interview Scheduling",
-        "Collaborative Hiring Workflows",
-        "Custom Approval Processes",
-        "Integrated Communication Tools",
+        "Centralized Configuration Management",
+        "Automated Provisioning & Scaling",
+        "Multi-Cloud Compatibility",
+        "Role-based Access Controls",
+        "Version-controlled Infrastructure",
+        "Monitoring & Alert Integration",
       ],
     },
     {
@@ -34,29 +34,29 @@ const Solutions = ({ onGetStartedClick }) => {
       icon: <Building className="h-12 w-12" />,
       title: "For Management",
       description:
-        "Get complete visibility into your hiring process with comprehensive analytics and reporting.",
+        "Gain full visibility into your infrastructure with detailed reporting, cost tracking, and performance analytics.",
       features: [
-        "Real-time Hiring Dashboards",
-        "Performance Analytics & KPIs",
-        "Budget & Cost Tracking",
-        "Team Performance Metrics",
-        "Predictive Hiring Insights",
-        "Executive Reporting",
+        "Real-time Usage Dashboards",
+        "Infrastructure Cost Optimization",
+        "Compliance & Audit Reporting",
+        "Team Productivity Metrics",
+        "Forecasting & Resource Planning",
+        "Executive Reports",
       ],
     },
     {
-      id: "candidates",
+      id: "developers",
       icon: <Search className="h-12 w-12" />,
-      title: "For Candidates",
+      title: "For Developers",
       description:
-        "Provide an exceptional candidate experience with intuitive application and tracking tools.",
+        "Empower engineers to deploy and manage environments with ease through self-service tools and automation.",
       features: [
-        "Simple Application Process",
-        "Real-time Status Updates",
-        "Interview Scheduling Portal",
-        "Document Management",
-        "Mobile-friendly Interface",
-        "Feedback & Communication",
+        "Self-service Environment Provisioning",
+        "Pre-approved Infrastructure Templates",
+        "Automated Testing Pipelines",
+        "Live Deployment Previews",
+        "CLI & UI Access Options",
+        "Feedback & Approval Flows",
       ],
     },
   ];
@@ -64,47 +64,45 @@ const Solutions = ({ onGetStartedClick }) => {
   const processes = [
     {
       icon: <FileText className="h-8 w-8" />,
-      title: "Job Posting",
-      description: "Create and publish job listings across multiple platforms",
+      title: "Define Infrastructure",
+      description: "Use Terraform and Ansible to codify configurations",
     },
     {
       icon: <Search className="h-8 w-8" />,
-      title: "Candidate Sourcing",
-      description: "AI-powered matching and candidate discovery",
+      title: "Validate & Review",
+      description: "Run automated checks and policy validations",
     },
     {
       icon: <Calendar className="h-8 w-8" />,
-      title: "Interview Management",
-      description: "Automated scheduling and interview coordination",
+      title: "Provision Resources",
+      description: "Deploy across environments with scheduling and tracking",
     },
     {
       icon: <BarChart3 className="h-8 w-8" />,
-      title: "Decision Making",
-      description: "Data-driven hiring decisions with analytics",
+      title: "Monitor Usage",
+      description: "Track performance, costs, and uptime metrics",
     },
     {
       icon: <CheckCircle className="h-8 w-8" />,
-      title: "Onboarding",
-      description: "Seamless transition from hiring to onboarding",
+      title: "Optimize & Scale",
+      description: "Continuously tune and scale resources as needed",
     },
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Centered */}
+      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
             <span className="block">
-              Solutions for Every{" "}
-              <span className="text-[#ffd700]">Stakeholder</span>
+              Solutions for Every <span className="text-[#ffd700]">Team</span>
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
-            RMS provides tailored solutions for HR teams, management, and
-            candidates, ensuring a seamless experience for everyone involved in
-            the hiring process.
+            RID delivers tailored solutions for DevOps, developers, and
+            management—simplifying infrastructure at scale.
           </p>
           <button
             onClick={onGetStartedClick}
@@ -116,16 +114,16 @@ const Solutions = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* Solutions Grid - Left Aligned */}
+      {/* Solutions Grid */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              A Solution for Everyone
+              Built for Everyone
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl">
-              RMS is designed to streamline the recruitment process for every
-              stakeholder involved.
+              RID is designed to empower every stakeholder in the infrastructure
+              lifecycle.
             </p>
           </div>
 
@@ -162,7 +160,7 @@ const Solutions = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* Process Flow - Left Aligned */}
+      {/* Process Flow */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
@@ -172,11 +170,11 @@ const Solutions = ({ onGetStartedClick }) => {
             className="mb-10"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Streamlined Hiring Process
+              Simplified Infrastructure Delivery
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl">
-              From job posting to onboarding, RMS guides you through every step
-              of the recruitment journey.
+              RID walks you through each step—from defining infrastructure to
+              managing costs—with automation at the core.
             </p>
           </motion.div>
 
@@ -202,7 +200,7 @@ const Solutions = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* CTA Section - Centered */}
+      {/* CTA */}
       <section className="pt-16 pb-6 bg-[#0026c0] text-white">
         <div className="px-6 text-left">
           <motion.div
@@ -211,11 +209,11 @@ const Solutions = ({ onGetStartedClick }) => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Experience the Difference?
+              Ready to Automate Your Infrastructure?
             </h2>
             <p className="text-xl mb-8 max-w-2xl text-white/90">
-              See how RMS can transform your hiring process with our
-              comprehensive solutions.
+              Discover how RID can streamline your DevOps processes and cut down
+              provisioning time drastically.
             </p>
             <button
               onClick={onGetStartedClick}

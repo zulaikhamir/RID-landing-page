@@ -10,6 +10,7 @@ import {
   CheckCircle,
   Mail,
   ArrowRight,
+  Shield,
 } from "lucide-react";
 
 const AboutUs = ({ onGetStartedClick }) => {
@@ -36,32 +37,32 @@ const AboutUs = ({ onGetStartedClick }) => {
 
   const values = [
     {
-      icon: <Heart className="h-8 w-8" />,
-      title: "People First",
-      description:
-        "We believe great companies are built by great people. Our mission is to help you find them.",
-      color: "from-red-500 to-pink-500",
-    },
-    {
       icon: <Zap className="h-8 w-8" />,
-      title: "Innovation",
+      title: "Automation First",
       description:
-        "Continuously pushing the boundaries of what's possible in recruitment technology.",
+        "We prioritize intelligent automation to eliminate repetitive manual infrastructure tasks and save time.",
       color: "from-yellow-500 to-orange-500",
     },
     {
       icon: <Target className="h-8 w-8" />,
-      title: "Results Driven",
+      title: "Precision & Consistency",
       description:
-        "Every feature we build is designed to deliver measurable improvements to your hiring process.",
+        "Infrastructure should never break due to human error. RID ensures repeatable, reliable deployments every time.",
       color: "from-blue-500 to-purple-500",
     },
     {
       icon: <Globe className="h-8 w-8" />,
-      title: "Global Impact",
+      title: "Scalable by Design",
       description:
-        "Empowering companies worldwide to build diverse, talented teams that drive success.",
+        "Built for both small teams and large enterprises, RID adapts and scales as your infrastructure grows.",
       color: "from-green-500 to-teal-500",
+    },
+    {
+      icon: <Shield className="h-8 w-8" />,
+      title: "Security & Control",
+      description:
+        "Security is baked into every layer — from VPC config to EC2 access — with no compromise on control.",
+      color: "from-red-500 to-pink-500",
     },
   ];
 
@@ -144,14 +145,15 @@ const AboutUs = ({ onGetStartedClick }) => {
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
             <span className="block">
               About{" "}
-              <span className="text-[#ffd700]">JIT Global Info Systems</span>
+              <span className="text-[#ffd700]">Rapid Infra Deployment</span>
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
-            For over a decade, we've been at the forefront of IT innovation,
-            helping businesses transform their operations with cutting-edge
-            technology solutions.
+            RID is built to revolutionize infrastructure management by
+            automating complex DevOps tasks, minimizing errors, and accelerating
+            cloud deployments with efficiency and precision.
           </p>
+
           <button
             onClick={onGetStartedClick}
             className="inline-flex items-center gap-2 bg-white text-[#181ed4] font-bold py-4 px-10 rounded-xl text-lg shadow-lg hover:bg-[#181ed4] hover:text-white transition-all duration-300"
