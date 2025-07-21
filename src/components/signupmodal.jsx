@@ -35,7 +35,7 @@ const SignupModal = ({ onClose }) => {
 
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-slate-800 mb-2">
-              Welcome to RMS
+              Welcome to RID
             </h2>
             <p className="text-slate-600">
               Choose your account type to get started
