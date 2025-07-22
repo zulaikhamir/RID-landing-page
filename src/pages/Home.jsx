@@ -123,7 +123,7 @@ const Home = ({ onGetStartedClick }) => {
 
       {/* CTA Section - Centered */}
       <section className="py-20 bg-[#0026c0] text-white">
-        <div className="container px-6 text-left">
+        <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -132,7 +132,7 @@ const Home = ({ onGetStartedClick }) => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Transform Your Infrastructure Workflow?
             </h2>
-            <p className="text-xl mb-8 max-w-2xl text-white/90">
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-white/90">
               Join teams already using RID to deploy infrastructure faster,
               safer, and smarter.
             </p>

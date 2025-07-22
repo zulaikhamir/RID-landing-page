@@ -201,8 +201,9 @@ const Solutions = ({ onGetStartedClick }) => {
       </section>
 
       {/* CTA */}
+      {/* CTA */}
       <section className="pt-16 pb-6 bg-[#0026c0] text-white">
-        <div className="px-6 text-left">
+        <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -211,7 +212,8 @@ const Solutions = ({ onGetStartedClick }) => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Automate Your Infrastructure?
             </h2>
-            <p className="text-xl mb-8 max-w-2xl text-white/90">
+
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-white/90">
               Discover how RID can streamline your DevOps processes and cut down
               provisioning time drastically.
             </p>
