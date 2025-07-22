@@ -362,8 +362,13 @@ const Contact = ({ onGetStartedClick }) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white rounded-2xl p-8 shadow-lg"
           >
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-500">Interactive Map Coming Soon</p>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                className="w-full h-full border-0"
+                src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62196.768313956745!2d80.10512322578349!3d13.01668419934817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f659e58a4d%3A0xcec861492324f54a!2sChennai%2C%20Tamil%20Nadu%20600116!5e0!3m2!1sen!2sin!4v1753175886554!5m2!1sen!2sin"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </motion.div>
         </div>

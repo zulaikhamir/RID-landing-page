@@ -140,7 +140,17 @@ const AboutUs = ({ onGetStartedClick }) => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
+        {/* Glow blob on top-left */}
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        {/* Right background image */}
+        <img
+          src="https://tse3.mm.bing.net/th/id/OIP.0_phgymTtupJFFOkzj-NJAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Decorative Background"
+          className="absolute right-0 top-0 h-full max-w-[50%] object-contain opacity-70 z-0 pointer-events-none"
+        />
+
+        {/* Text content over the image */}
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
             <span className="block">
