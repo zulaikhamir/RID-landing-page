@@ -105,7 +105,7 @@ const Home = ({ onGetStartedClick }) => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-left"
+                  className="bg-white/100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-left"
                 >
                   <div className="bg-[#0026c0] w-12 h-12 rounded-lg flex items-center justify-center text-white mb-4">
                     {feature.icon}

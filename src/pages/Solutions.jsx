@@ -134,7 +134,7 @@ const Solutions = ({ onGetStartedClick }) => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-white/100 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="bg-[#0026c0] p-8 text-white">
                   <div className="flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
