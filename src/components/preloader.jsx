@@ -51,7 +51,7 @@ const Preloader = ({ isVisible }) => {
             </motion.div>
             {/* Brand Title */}
             <h1 className="text-5xl font-extrabold text-white drop-shadow mb-2 tracking-wide">
-              RMS
+              RID
             </h1>
             <p className="text-white/80 text-lg mb-4 font-medium">
               by JIT Global Info Systems

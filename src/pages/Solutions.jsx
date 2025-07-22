@@ -92,7 +92,7 @@ const Solutions = ({ onGetStartedClick }) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
+      {/* <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-10 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -112,10 +112,10 @@ const Solutions = ({ onGetStartedClick }) => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Solutions Grid */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-5 pb-0 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -161,7 +161,7 @@ const Solutions = ({ onGetStartedClick }) => {
       </section>
 
       {/* Process Flow */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -202,7 +202,7 @@ const Solutions = ({ onGetStartedClick }) => {
 
       {/* CTA */}
       {/* CTA */}
-      <section className="pt-16 pb-6 bg-[#0026c0] text-white">
+      {/* <section className="pt-6 pb-6 bg-[#0026c0] text-white">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -226,7 +226,7 @@ const Solutions = ({ onGetStartedClick }) => {
             </button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -66,60 +66,60 @@ const AboutUs = ({ onGetStartedClick }) => {
     },
   ];
 
-  const stats = [
-    { number: "10+", label: "Years Experience" },
-    { number: "500+", label: "Companies Served" },
-    { number: "50K+", label: "Successful Hires" },
-    { number: "99%", label: "Client Satisfaction" },
-  ];
+  // const stats = [
+  //   { number: "10+", label: "Years Experience" },
+  //   { number: "500+", label: "Companies Served" },
+  //   { number: "50K+", label: "Successful Hires" },
+  //   { number: "99%", label: "Client Satisfaction" },
+  // ];
 
-  const team = [
-    {
-      name: "Dr. Sarah Williams",
-      role: "CEO & Founder",
-      bio: "Former VP of Talent at Fortune 500 companies, PhD in Industrial Psychology",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b332c467?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Michael Chen",
-      role: "CTO",
-      bio: "Former Lead Engineer at Google, 15+ years in enterprise software development",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Head of Product",
-      bio: "Product strategy expert with deep understanding of HR workflows and user experience",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-    },
-  ];
+  // const team = [
+  //   {
+  //     name: "Dr. Sarah Williams",
+  //     role: "CEO & Founder",
+  //     bio: "Former VP of Talent at Fortune 500 companies, PhD in Industrial Psychology",
+  //     image:
+  //       "https://images.unsplash.com/photo-1494790108755-2616b332c467?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+  //   },
+  //   {
+  //     name: "Michael Chen",
+  //     role: "CTO",
+  //     bio: "Former Lead Engineer at Google, 15+ years in enterprise software development",
+  //     image:
+  //       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+  //   },
+  //   {
+  //     name: "Emily Rodriguez",
+  //     role: "Head of Product",
+  //     bio: "Product strategy expert with deep understanding of HR workflows and user experience",
+  //     image:
+  //       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+  //   },
+  // ];
 
-  const milestones = [
-    {
-      year: "2013",
-      title: "Company Founded",
-      description:
-        "JIT Global Info Systems established with a vision to transform IT solutions",
-    },
-    {
-      year: "2018",
-      title: "RMS Launch",
-      description: "Launched our flagship Recruitment Management System",
-    },
-    {
-      year: "2020",
-      title: "AI Integration",
-      description: "Introduced AI-powered candidate matching and screening",
-    },
-    {
-      year: "2024",
-      title: "Global Expansion",
-      description: "Serving 500+ companies across 25+ countries",
-    },
-  ];
+  // const milestones = [
+  //   {
+  //     year: "2013",
+  //     title: "Company Founded",
+  //     description:
+  //       "JIT Global Info Systems established with a vision to transform IT solutions",
+  //   },
+  //   {
+  //     year: "2018",
+  //     title: "RMS Launch",
+  //     description: "Launched our flagship Recruitment Management System",
+  //   },
+  //   {
+  //     year: "2020",
+  //     title: "AI Integration",
+  //     description: "Introduced AI-powered candidate matching and screening",
+  //   },
+  //   {
+  //     year: "2024",
+  //     title: "Global Expansion",
+  //     description: "Serving 500+ companies across 25+ countries",
+  //   },
+  // ];
 
   // Compact modal style variables
   const modalPadding = "p-4 sm:p-6";
@@ -139,17 +139,16 @@ const AboutUs = ({ onGetStartedClick }) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-6  overflow-hidden">
+        {/*here the padding*/}
         {/* Glow blob on top-left */}
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
-
         {/* Right background image */}
         <img
           src="https://tse3.mm.bing.net/th/id/OIP.0_phgymTtupJFFOkzj-NJAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
           alt="Decorative Background"
           className="absolute right-0 top-0 h-full max-w-[50%] object-contain opacity-70 z-0 pointer-events-none"
         />
-
         {/* Text content over the image */}
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -173,8 +172,7 @@ const AboutUs = ({ onGetStartedClick }) => {
           </button>
         </div>
       </section>
-
-      {/* Stats Section */}
+      {/* Stats Section
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -194,10 +192,9 @@ const AboutUs = ({ onGetStartedClick }) => {
             ))}
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* Mission Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -206,7 +203,7 @@ const AboutUs = ({ onGetStartedClick }) => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-[#181ed4] mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#181ed4] mb-1">
                 Our Mission
               </h2>
               <p className="text-xl text-[#181ed4] leading-relaxed">
@@ -225,7 +222,7 @@ const AboutUs = ({ onGetStartedClick }) => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-white rounded-2xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold text-[#181ed4] mb-4">
+              <h3 className="text-2xl font-bold text-[#181ed4] mb-1 ">
                 What We Do
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -274,9 +271,8 @@ const AboutUs = ({ onGetStartedClick }) => {
           </div>
         </div>
       </section>
-
       {/* Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-5 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -314,9 +310,8 @@ const AboutUs = ({ onGetStartedClick }) => {
           </div>
         </div>
       </section>
-
       {/* Timeline Section */}
-      <section className="py-20 bg-[#181ed4]">
+      {/* <section className="py-20 bg-[#181ed4]">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -364,10 +359,9 @@ const AboutUs = ({ onGetStartedClick }) => {
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* Leadership Team */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -407,10 +401,9 @@ const AboutUs = ({ onGetStartedClick }) => {
             ))}
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* CTA Section */}
-      <section className="py-20 bg-[#181ed4] text-white">
+      <section className="py-10 bg-[#181ed4] text-white">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

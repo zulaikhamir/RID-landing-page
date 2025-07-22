@@ -96,7 +96,7 @@ const Contact = ({ onGetStartedClick }) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
+      {/* <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[50vh] overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -117,10 +117,10 @@ const Contact = ({ onGetStartedClick }) => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form & Info */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-6">
           {/* Success Message Animation */}
           <div className="mb-6">
@@ -296,8 +296,45 @@ const Contact = ({ onGetStartedClick }) => {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Visit Our Office
+            </h2>
+            <p className="text-xl text-gray-600">
+              We'd love to meet you in person. Find us at our Chennai office.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            // className="bg-white rounded-2xl p-8 shadow-lg"
+            className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto"
+          >
+            {/* <div className="aspect-video rounded-lg overflow-hidden"> */}
+            <div className="w-full h-64 rounded-lg overflow-hidden">
+              <iframe
+                className="w-full h-full border-0"
+                src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62196.768313956745!2d80.10512322578349!3d13.01668419934817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f659e58a4d%3A0xcec861492324f54a!2sChennai%2C%20Tamil%20Nadu%20600116!5e0!3m2!1sen!2sin!4v1753175886554!5m2!1sen!2sin"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-5 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -336,41 +373,6 @@ const Contact = ({ onGetStartedClick }) => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Visit Our Office
-            </h2>
-            <p className="text-xl text-gray-600">
-              We'd love to meet you in person. Find us at our Chennai office.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-2xl p-8 shadow-lg"
-          >
-            <div className="aspect-video rounded-lg overflow-hidden">
-              <iframe
-                className="w-full h-full border-0"
-                src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62196.768313956745!2d80.10512322578349!3d13.01668419934817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f659e58a4d%3A0xcec861492324f54a!2sChennai%2C%20Tamil%20Nadu%20600116!5e0!3m2!1sen!2sin!4v1753175886554!5m2!1sen!2sin"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>

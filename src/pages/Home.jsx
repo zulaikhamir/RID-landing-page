@@ -54,7 +54,7 @@ const Home = ({ onGetStartedClick }) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Centered */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-24 overflow-hidden">
+      {/* <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[60vh] py-10 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -78,7 +78,7 @@ const Home = ({ onGetStartedClick }) => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section - Left Aligned Content */}
       <section className="py-20 bg-gray-50">
@@ -121,8 +121,8 @@ const Home = ({ onGetStartedClick }) => {
         </div>
       </section>
 
-      {/* CTA Section - Centered */}
-      <section className="py-20 bg-[#0026c0] text-white">
+      {/* CTA Section - Centered
+      <section className="py-10 bg-[#0026c0] text-white">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -144,7 +144,7 @@ const Home = ({ onGetStartedClick }) => {
             </button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

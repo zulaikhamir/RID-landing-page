@@ -7,7 +7,7 @@ import SignupModal from "./components/SignupModal";
 import Aboutus from "./pages/Aboutus";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
+// import NotFound from "./pages/NotFound";
 import Solutions from "./pages/Solutions";
 
 function App() {
@@ -19,13 +19,14 @@ function App() {
       <Preloader />
 
       {/* Signup modal appears automatically and closes with the "×" inside it */}
-      {isModalOpen && <SignupModal onClose={() => setIsModalOpen(false)} />}
+      {/* {isModalOpen && <SignupModal onClose={() => setIsModalOpen(false)} />} */}
 
       <Aboutus />
-      <Contact />
+
       <Home />
-      <NotFound />
+      {/* <NotFound /> */}
       <Solutions />
+      <Contact />
       <Footer />
     </div>
   );
