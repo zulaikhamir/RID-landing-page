@@ -45,7 +45,7 @@ const AboutUs = ({ onGetStartedClick }) => {
   ];
 
   return (
-    <section className="py-10 px-6 bg-white text-gray-800">
+    <section className="py-20 px-6 bg-white text-gray-800">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div

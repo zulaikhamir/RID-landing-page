@@ -96,10 +96,10 @@ const Contact = ({ onGetStartedClick }) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[30vh] overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white min-h-[30vh] overflow-hidden pt-10">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none "></div>
         <div className="relative z-10 max-w-4xl px-6 mt-10">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6  leading-tight">
             <span className="block">
               Get in <span className="text-[#ffd700]">Touch</span>
             </span>

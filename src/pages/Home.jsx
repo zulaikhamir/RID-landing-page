@@ -5,7 +5,7 @@ const Home = ({ onGetStartedClick }) => {
   return (
     <div>
       {/* Hero Section - Centered */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white py-10 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white py-20 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-1 leading-tight">
