@@ -76,7 +76,7 @@ const WhyRID = ({ onGetStartedClick }) => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white py-24 overflow-hidden">
+      {/* <section className="relative bg-gradient-to-br from-[#181ed4] via-[#3a47d5] to-[#6a82fb] text-white py-24 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -95,9 +95,10 @@ const WhyRID = ({ onGetStartedClick }) => {
           </button>
         </div>
       </section>
+       */}
 
       {/* Benefits */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -121,7 +122,7 @@ const WhyRID = ({ onGetStartedClick }) => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-white/100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="bg-[#0026c0] w-16 h-16 rounded-full flex items-center justify-center text-white mb-6">
                   {benefit.icon}
@@ -140,7 +141,7 @@ const WhyRID = ({ onGetStartedClick }) => {
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-white">
+      <section className="py-1 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -184,7 +185,7 @@ const WhyRID = ({ onGetStartedClick }) => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-[#0026c0] text-white">
+      {/* <section className="py-20 bg-[#0026c0] text-white">
         <div className="px-6 text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -207,7 +208,7 @@ const WhyRID = ({ onGetStartedClick }) => {
             </button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
