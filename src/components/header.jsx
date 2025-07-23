@@ -1,14 +1,38 @@
 import React, { useState } from "react";
-import { Menu, X, Briefcase } from "lucide-react";
+import { Menu, X, Briefcase, ChevronDown } from "lucide-react";
 
 const Header = ({ onSignupClick = () => {} }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
 
   const navItems = [
     { path: "home", label: "Home" },
     { path: "about", label: "About Us" },
-    { path: "whyrid", label: "Why RID" },
+    { path: "products", label: "Products" },
     { path: "contact", label: "Contact Us" },
+  ];
+
+  const products = [
+    {
+      key: "rid",
+      label: "RID",
+      path: "/rid",
+    },
+    {
+      key: "rms",
+      label: "RMS",
+      path: "/solutions",
+    },
+    {
+      key: "ims",
+      label: "IMS",
+      path: "/ims",
+    },
+    {
+      key: "intellichat",
+      label: "IntelliChat",
+      path: "/intellichat",
+    },
   ];
 
   return (
@@ -25,17 +49,48 @@ const Header = ({ onSignupClick = () => {} }) => {
             </a>
           </div>
 
-          {/* Center Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
-            {navItems.map((item) => (
-              <a
-                key={item.path}
-                href={`#${item.path}`}
-                className="text-[#181ed4] hover:text-white transition-colors duration-300 font-medium relative group px-2 py-1 rounded hover:bg-[#181ed4]/10"
-              >
-                {item.label}
-              </a>
-            ))}
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-10 relative">
+            {navItems.map((item) => {
+              if (item.label === "Products") {
+                return (
+                  <div
+                    key={item.label}
+                    className="relative"
+                    onMouseEnter={() => setIsProductDropdownOpen(true)}
+                    onMouseLeave={() => setIsProductDropdownOpen(false)}
+                  >
+                    <button className="text-[#181ed4] hover:text-white transition-colors duration-300 font-medium px-2 py-1 rounded hover:bg-[#181ed4]/10 flex items-center">
+                      {item.label}
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </button>
+                    {isProductDropdownOpen && (
+                      <div className="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 shadow-lg rounded-lg z-50">
+                        {products.map((product) => (
+                          <a
+                            key={product.key}
+                            href={product.path}
+                            className="block px-4 py-3 text-slate-700 hover:bg-[#181ed4]/10 hover:text-[#181ed4] transition-all first:rounded-t-lg last:rounded-b-lg"
+                          >
+                            {product.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <a
+                  key={item.path}
+                  href={`#${item.path}`}
+                  className="text-[#181ed4] hover:text-white transition-colors duration-300 font-medium relative group px-2 py-1 rounded hover:bg-[#181ed4]/10"
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Right Buttons */}
@@ -69,16 +124,48 @@ const Header = ({ onSignupClick = () => {} }) => {
         {isMobileMenuOpen && (
           <div className="mt-4 md:hidden">
             <div className="bg-white rounded-lg shadow-lg p-4 space-y-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.path}
-                  href={`#${item.path}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block py-2 text-slate-600 hover:text-blue-600 transition-colors font-medium"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.label === "Products" ? (
+                  <div key="mobile-products">
+                    <button
+                      onClick={() =>
+                        setIsProductDropdownOpen(!isProductDropdownOpen)
+                      }
+                      className="block w-full text-left py-2 text-slate-600 hover:text-blue-600 font-medium flex items-center justify-between"
+                    >
+                      Products
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform ${
+                          isProductDropdownOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {isProductDropdownOpen && (
+                      <div className="ml-4 mt-1 space-y-1">
+                        {products.map((product) => (
+                          <a
+                            key={product.key}
+                            href={product.path}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block text-sm text-slate-600 hover:text-blue-600 py-1"
+                          >
+                            {product.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <a
+                    key={item.path}
+                    href={`#${item.path}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block py-2 text-slate-600 hover:text-blue-600 transition-colors font-medium"
+                  >
+                    {item.label}
+                  </a>
+                )
+              )}
               <button
                 onClick={() => {
                   onSignupClick();
@@ -93,7 +180,7 @@ const Header = ({ onSignupClick = () => {} }) => {
                   alert("Login page coming soon!");
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full mt-2 inline-flex items-center bg-white text-blue-600 border border-blue-600 font-semibold py-2 px-6 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+                className="w-full mt-2 inline-flex items-center justify-center bg-white text-blue-600 border border-blue-600 font-semibold py-2 px-6 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
               >
                 Login
               </button>
