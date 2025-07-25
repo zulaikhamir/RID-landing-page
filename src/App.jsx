@@ -23,7 +23,7 @@ function App() {
         <Aboutus />
       </section>
       <section id="whyrid">
-        <WhyRid />
+        <WhyRID />
       </section>
       <section id="solutions">
         <Solutions />
