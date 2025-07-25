@@ -6,7 +6,7 @@ import Aboutus from "./pages/Aboutus.jsx";
 import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
 import Solutions from "./pages/Solutions.jsx";
-import WhyRid from "./pages/WhyRid.jsx";
+import WhyRID from "./pages/WhyRID.jsx";
 
 function App() {
   return (
